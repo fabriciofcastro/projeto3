@@ -1,0 +1,51 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+ font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: -1;
+ background-color: #121214;
+ height: 308px;
+ width: 100vw;
+}
+
+.texto-header {
+  width: 316px;
+}
+
+header {
+  width: 736px;
+  margin: 74px auto;
+}
+
+header h1 {
+  font-family: 'Archivo', sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: #fff;
+  line-height: 42px;
+}
+
+header p {
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #42d3ff;
+}
+
+form {
+  background-color: #760f0f;
+  min-height: 300px;
+  width: 736px;
+  margin: auto;
+}
