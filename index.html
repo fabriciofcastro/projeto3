@@ -23,7 +23,7 @@
         formulário de inscrição.
       </p>
    </header>
-   <form action="">
+   <form id="my-form">
     <fieldset>
 
       <div class="fieldset-wrapper">
@@ -31,17 +31,17 @@
 
       <div class="input-wrapper">
         <label for="event-title">Titulo do evento <span>(Mínimo 8 caracteres)</span></label>
-        <input type="text" id="event-title" placeholder="Digite o título do evento" />
+        <input type="text" id="event-title" placeholder="Digite o título do evento" required/>
       </div>
       
       <div class="input-wrapper">
         <label for="event-link">Link do evento <span>(Comece com https:// )</span></label>
-        <input type="text" id="event-link" placeholder="Informe o link do evento" />
+        <input type="text" id="event-link" placeholder="Informe o link do evento" required/>
       </div>
       
       <div class="input-wrapper">
         <label for="event-whatsapp">Whatsapp para contatos <span>(Somente números</span></label>
-        <input type="number" id="event-whatsapp" placeholder="Digite o número do whatsapp" />
+        <input type="number" id="event-whatsapp" placeholder="Digite o número do whatsapp" required />
       </div>
 
       <div class="input-wrapper">
@@ -51,7 +51,7 @@
 
       <div class="input-wrapper">
         <label for="event-categoria">Categoria</label>
-        <select id="event-categoria">
+        <select id="event-categoria" required>
           <option value="live">Ao vivo</option>
           <option value="podcast">Podcast</option>
           <option value="mentorship">Mentoria</option>
@@ -69,16 +69,16 @@
 
         <div class="input-wrapper">
           <label for="event-email">E-mail do administrador <span>(Digite um e-mail válido)</span></label>
-          <input type="email" id="event-email" placeholder="Digite um e-mail válido" />
+          <input type="email" id="event-email" placeholder="Digite um e-mail válido" required minlength="15"/>
         </div>
 
         <div class="input-wrapper">
           <label for="event-password">Senha de acesso para os participantes <span>(Mínimo 8 caracteres)</span></label>
-          <input type="password" id="event-password" placeholder="Digite sua senha" />
+          <input type="password" id="event-password" placeholder="Digite sua senha" required minlength="8"/>
         </div>
 
         <div class="checkbox-wrapper">
-          <input type="checkbox" id="event-private" placeholder="Digite sua senha" />
+          <input type="checkbox" id="event-private" placeholder="Digite sua senha" required/>
           <label for="event-private">Evento privado</label>
           
         </div>
@@ -93,26 +93,30 @@
 
           <div class="input-wrapper">
             <label for="event-date">Data </label>
-            <input type="text" id="event-date" placeholder="Digite uma data" />
+            <input type="text" id="event-date" placeholder="Digite uma data" required/>
           </div>
 
         <div class="input-wrapper">
           <label for="event-begin">De</label>
-          <input type="time" id="event-begin" placeholder="Digite uma data inicial" />
+          <input type="time" id="event-begin" placeholder="Digite uma data inicial" required />
         </div>
 
         <div class="input-wrapper">
           <label for="event-end">Até </label>
-          <input type="time" id="event-end" placeholder="Digite data final" />
+          <input type="time" id="event-end" placeholder="Digite data final" req/>
         </div>
         </div> <!--  end 3-col -->
 
         
       </div>
     </fieldset>
+
+   
   </form>
-  
-  </div>
+     <footer>
+       <input form="my-form" class="button" type="submit" value="Salvar evento">
+     </div>buttons
+    </footer>
   
 </body>
 </html>
